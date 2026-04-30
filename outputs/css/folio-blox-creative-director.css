@@ -1,0 +1,291 @@
+:root {
+  --wire-page-bg: #6f2a13;
+  --wire-stage-bg: #080a09;
+  --wire-stage-soft: #101211;
+  --wire-hero-hot: #ff5b1d;
+  --wire-hero-deep: #321019;
+  --wire-hero-shadow: rgba(6, 8, 8, 0.5);
+  --wire-text: #ffffff;
+  --wire-text-soft: rgba(255, 255, 255, 0.72);
+  --wire-text-faint: rgba(255, 255, 255, 0.46);
+  --wire-accent: #ff6122;
+  --wire-border: rgba(255, 255, 255, 0.12);
+  --wire-font: Inter, Arial, Helvetica, sans-serif;
+}
+
+body.folio-wireframe {
+  background: var(--wire-stage-bg);
+  color: var(--wire-text);
+  font-family: var(--wire-font);
+  min-height: 100vh;
+}
+
+.folio-wireframe h1,
+.folio-wireframe h2,
+.folio-wireframe h3,
+.folio-wireframe .display-text {
+  color: var(--wire-text);
+  font-family: var(--wire-font);
+}
+
+.wire-strong-text {
+  color: var(--wire-text);
+}
+
+.wireframe-stage {
+  background: var(--wire-stage-bg);
+  box-shadow: none;
+  width: 100%;
+}
+
+.wire-nav-link,
+.wire-microcopy,
+.wire-service-label,
+.wire-card-caption {
+  color: var(--wire-text-soft);
+}
+
+.wire-hero {
+  background:
+    radial-gradient(circle at 55% 32%, rgba(255, 185, 80, 0.22), transparent 14rem),
+    linear-gradient(115deg, var(--wire-hero-hot) 0%, #d93d1d 40%, var(--wire-hero-deep) 100%);
+  border-bottom-left-radius: 4.5rem;
+  border-bottom-right-radius: 4.5rem;
+  min-height: 34rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.wire-portrait {
+  background:
+    radial-gradient(ellipse at 52% 28%, rgba(255, 232, 210, 0.58), transparent 5rem),
+    radial-gradient(ellipse at 50% 41%, rgba(22, 13, 17, 0.96) 0 7.5rem, transparent 7.7rem),
+    linear-gradient(92deg, transparent 0 20%, rgba(20, 12, 17, 0.68) 47%, rgba(8, 7, 8, 0.92) 78%);
+  bottom: -2rem;
+  clip-path: polygon(22% 12%, 78% 3%, 90% 100%, 0 100%);
+  filter: saturate(0.95);
+  left: 31%;
+  opacity: 0.86;
+  position: absolute;
+  top: 4.6rem;
+  width: 35rem;
+}
+
+.wire-portrait::before,
+.wire-portrait::after {
+  border: 0.28rem solid rgba(255, 238, 225, 0.78);
+  border-radius: 999px;
+  content: "";
+  height: 3.8rem;
+  position: absolute;
+  top: 4.2rem;
+  width: 5.6rem;
+}
+
+.wire-portrait::before {
+  left: 11.3rem;
+  transform: rotate(-18deg);
+}
+
+.wire-portrait::after {
+  left: 16.7rem;
+  transform: rotate(-16deg);
+}
+
+.wire-pill-button {
+  align-items: center;
+  background: var(--wire-text);
+  border-radius: var(--radius-pill);
+  color: #111312;
+  display: inline-flex;
+  font-size: 0.76rem;
+  font-weight: 800;
+  gap: 0.55rem;
+  padding: 0.65rem 0.68rem 0.65rem 1.25rem;
+}
+
+.wire-pill-button.is-orange {
+  background: var(--wire-accent);
+  color: var(--wire-text);
+}
+
+.wire-pill-icon {
+  align-items: center;
+  background: var(--wire-accent);
+  border-radius: 999px;
+  color: var(--wire-text);
+  display: inline-flex;
+  height: 1.75rem;
+  justify-content: center;
+  line-height: 1;
+  width: 1.75rem;
+}
+
+.wire-pill-button.is-orange .wire-pill-icon {
+  background: var(--wire-text);
+  color: var(--wire-accent);
+}
+
+.wire-service-number,
+.wire-eyebrow {
+  color: var(--wire-accent);
+}
+
+.wire-logo-band {
+  background: var(--wire-stage-soft);
+  border-bottom-left-radius: 4.5rem;
+  border-bottom-right-radius: 4.5rem;
+}
+
+.wire-brand-mark {
+  align-items: center;
+  color: var(--wire-text);
+  display: inline-flex;
+  font-size: 1.18rem;
+  font-weight: 900;
+  gap: 0.62rem;
+  white-space: nowrap;
+}
+
+.wire-brand-symbol {
+  border: 0.22rem solid rgba(255, 255, 255, 0.84);
+  border-radius: 999px;
+  display: inline-block;
+  height: 1.35rem;
+  position: relative;
+  width: 1.35rem;
+}
+
+.wire-brand-symbol.is-hourglass {
+  border: 0;
+  height: 1.35rem;
+  width: 1.35rem;
+}
+
+.wire-brand-symbol.is-hourglass::before,
+.wire-brand-symbol.is-hourglass::after {
+  background: rgba(255, 255, 255, 0.9);
+  content: "";
+  height: 0.58rem;
+  left: 0.1rem;
+  position: absolute;
+  width: 1.15rem;
+}
+
+.wire-brand-symbol.is-hourglass::before {
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0;
+}
+
+.wire-brand-symbol.is-hourglass::after {
+  bottom: 0;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.wire-brand-symbol.is-frame {
+  border-left-color: transparent;
+}
+
+.wire-brand-symbol.is-ultra {
+  border-color: transparent;
+}
+
+.wire-brand-symbol.is-ultra::before,
+.wire-brand-symbol.is-ultra::after {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  content: "";
+  height: 1.25rem;
+  position: absolute;
+  top: 0.02rem;
+  width: 1.25rem;
+}
+
+.wire-brand-symbol.is-ultra::before {
+  left: -0.18rem;
+}
+
+.wire-brand-symbol.is-ultra::after {
+  left: 0.55rem;
+}
+
+.wire-gallery-card {
+  background: var(--color-surface-muted);
+  border-radius: 1.05rem;
+  min-height: 18.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.wire-gallery-card::before {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(196, 196, 196, 0.86)),
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0 0.08rem, transparent 0.08rem 0.7rem);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.wire-gallery-card span {
+  background: rgba(8, 10, 9, 0.74);
+  border-radius: var(--radius-pill);
+  color: var(--wire-text);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  left: 1rem;
+  letter-spacing: 0.04em;
+  padding: 0.42rem 0.76rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 1rem;
+}
+
+.wire-card-01::after {
+  background:
+    linear-gradient(120deg, transparent 0 32%, rgba(0, 0, 0, 0.9) 33% 48%, transparent 49%),
+    radial-gradient(ellipse at 48% 62%, rgba(0, 0, 0, 0.88) 0 4.5rem, transparent 4.7rem),
+    linear-gradient(180deg, transparent 0 39%, rgba(0, 0, 0, 0.7) 40% 43%, transparent 44%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.wire-card-02::after {
+  background:
+    radial-gradient(ellipse at 49% 28%, rgba(0, 0, 0, 0.8) 0 3.2rem, transparent 3.4rem),
+    linear-gradient(90deg, transparent 0 40%, rgba(0, 0, 0, 0.84) 41% 63%, transparent 64%),
+    radial-gradient(circle at 50% 31%, transparent 0 3.8rem, rgba(245, 245, 245, 0.95) 3.85rem 5rem, transparent 5.1rem);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.wire-card-03::after {
+  background:
+    linear-gradient(90deg, transparent 0 52%, rgba(0, 0, 0, 0.9) 53% 67%, transparent 68%),
+    radial-gradient(ellipse at 60% 66%, rgba(0, 0, 0, 0.82) 0 2.8rem, transparent 3rem),
+    linear-gradient(155deg, transparent 0 50%, rgba(0, 0, 0, 0.62) 51% 74%, transparent 75%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+@media (max-width: 760px) {
+  .wire-hero,
+  .wire-logo-band {
+    border-bottom-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+  }
+
+  .wire-hero {
+    min-height: 42rem;
+  }
+
+  .wire-portrait {
+    left: 8%;
+    opacity: 0.58;
+    top: 8rem;
+    width: 28rem;
+  }
+}

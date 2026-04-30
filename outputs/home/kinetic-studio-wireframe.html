@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinetic Studio Wireframe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+    <link rel="stylesheet" href="css/kinetic-studio-wireframe.css">
+  </head>
+  <body class="kinetic-wireframe">
+    <main id="wireframe-shell" class="min-h-screen">
+      <div id="kinetic-page" class="kinetic-stage">
+        <section id="hero" class="kinetic-hero px-7 pb-20 pt-6 md:px-12 lg:px-14">
+          <div id="hero-motion-placeholder" class="placeholder-image kinetic-hero-placeholder">
+            <span>Hero motion photo</span>
+          </div>
+          <div class="kinetic-hero-figure" aria-hidden="true"></div>
+          <span id="hero-motion-label" class="kinetic-media-label absolute left-[47%] top-[7.2rem] z-10 hidden md:inline-flex">Hero motion photo</span>
+
+          <nav id="primary-navigation" class="relative z-20 flex items-center justify-between gap-6">
+            <a id="brand-mark" href="#hero" class="flex items-center gap-3" aria-label="Kinetic Studio">
+              <span class="kinetic-logo-mark" aria-hidden="true"><span></span></span>
+            </a>
+
+            <div id="nav-links" class="hidden items-center gap-8 text-[0.62rem] font-bold md:flex">
+              <a class="kinetic-nav-link" href="#hero">Home</a>
+              <a class="kinetic-nav-link" href="#about">About</a>
+              <a class="kinetic-nav-link" href="#services">Services</a>
+              <a class="kinetic-nav-link" href="#portfolio">Portfolio</a>
+              <a class="kinetic-nav-link" href="#blog">Blog</a>
+            </div>
+
+            <a id="nav-contact-button" href="#contact" class="kinetic-outline-button">Contact us</a>
+          </nav>
+
+          <div id="hero-content" class="relative z-10 mt-16 grid gap-8 md:mt-20 md:grid-cols-[0.62fr_0.38fr] md:items-start">
+            <div id="hero-copy" class="max-w-[22rem]">
+              <h1 class="text-[2.7rem] font-semibold leading-[0.92] md:text-[3.35rem]">
+                Redefine<br><span class="font-normal text-[var(--kinetic-muted)]">digital stories</span>
+              </h1>
+              <p class="kinetic-small-copy mt-3 max-w-[19rem] text-[0.66rem] leading-snug">
+                Our kinetic studio shapes bold digital journeys with adaptive motion systems, flowing stories, and visual energy.
+              </p>
+              <a id="hero-cta-button" href="#services" class="kinetic-action-pill mt-7">
+                <span class="kinetic-pill-glow" aria-hidden="true"></span>
+                <span>Begin now</span>
+              </a>
+            </div>
+
+            <aside id="hero-detail-card" class="kinetic-service-card ml-auto mt-2 w-full max-w-[17rem]">
+              <div id="hero-detail-placeholder" class="placeholder-image absolute inset-0 min-h-0 opacity-0">
+                <span>Detailing service image</span>
+              </div>
+              <span id="hero-detail-image-label" class="kinetic-media-label is-dark absolute right-4 top-4 z-10">Detail photo</span>
+              <div class="kinetic-service-card-content">
+                <span class="kinetic-label-pill mb-5">Service image</span>
+                <h2 class="text-xl font-medium leading-none text-white">Detailing service</h2>
+                <p class="mt-1 text-[0.68rem] font-medium text-white/60">Movement and aggressive</p>
+              </div>
+            </aside>
+          </div>
+
+          <p id="hero-display-word" class="kinetic-giant-word" aria-hidden="true">kinetic</p>
+        </section>
+
+        <section id="about" class="px-7 pb-16 pt-16 md:px-12 md:pb-20 md:pt-24 lg:px-14">
+          <div id="about-statement" class="mx-auto max-w-[43rem]">
+            <div class="mb-5 flex items-center justify-center gap-24">
+              <span class="kinetic-section-symbol" aria-hidden="true">*</span>
+              <p class="text-center text-[0.68rem] font-bold text-[var(--kinetic-accent)]">About studio</p>
+            </div>
+            <h2 class="text-center text-[2.15rem] font-medium leading-[1.04] md:text-[3.2rem]">
+              Kinetic Studio - is an SMM agency of bold
+              <span class="kinetic-gradient-chip" aria-hidden="true"></span>
+              creators that delivers the power of social media with
+              <span class="kinetic-gradient-chip" aria-hidden="true"></span>
+              cutting-edge strategy
+            </h2>
+            <p class="kinetic-small-copy mx-auto mt-5 max-w-[17rem] text-center text-[0.7rem] leading-snug">
+              The brand's focus is through smart insight with adjustable precision logic after breakers through vision.
+            </p>
+          </div>
+        </section>
+
+        <section id="services" class="px-7 pb-24 md:px-12 lg:px-14">
+          <div id="service-card-grid" class="grid items-end gap-3 md:grid-cols-4 md:gap-4">
+            <article id="service-strategy-card" class="kinetic-feature-card is-dark md:min-h-[17.3rem]">
+              <span class="kinetic-card-label">Strategy</span>
+              <div class="kinetic-feature-text">
+                <span class="kinetic-feature-dot mb-3"></span>
+                <h3>Bold strategies that shape identities</h3>
+                <p class="mt-3">We craft systems with insight, visual rhythm, and atmosphere that advances.</p>
+              </div>
+            </article>
+
+            <article id="service-growth-card" class="kinetic-feature-card is-blur md:mt-24 md:min-h-[13.4rem]">
+              <div id="service-growth-placeholder" class="placeholder-image absolute inset-0 min-h-0 opacity-0">
+                <span>Growth motion image</span>
+              </div>
+              <span id="growth-image-label" class="kinetic-media-label is-dark absolute right-4 top-4 z-10">Motion image</span>
+              <span class="kinetic-card-label">Growth</span>
+              <div class="kinetic-feature-text">
+                <span class="kinetic-feature-dot mb-3"></span>
+                <h3>Driving measurable growth through impact</h3>
+                <p class="mt-3">Focused on reach, engagement, and real sales, not empty noise.</p>
+              </div>
+            </article>
+
+            <article id="service-creative-card" class="kinetic-feature-card is-photo md:min-h-[17.3rem]">
+              <div id="service-creative-placeholder" class="placeholder-image absolute inset-0 min-h-0 opacity-0">
+                <span>Creative process image</span>
+              </div>
+              <span id="creative-image-label" class="kinetic-media-label is-dark absolute right-4 top-4 z-10">Process image</span>
+              <span class="kinetic-card-label">Creative</span>
+              <div class="kinetic-feature-text">
+                <span class="kinetic-feature-dot mb-3"></span>
+                <h3>Creative processes with rapid delivery</h3>
+                <p class="mt-3">From concept to finished assets without losing quality or momentum.</p>
+              </div>
+            </article>
+
+            <article id="service-team-card" class="kinetic-feature-card is-soft md:mt-24 md:min-h-[13.4rem]">
+              <span class="kinetic-card-label">Format</span>
+              <div class="kinetic-feature-text">
+                <span class="kinetic-feature-dot mb-3"></span>
+                <h3>A dedicated team behind success</h3>
+                <p class="mt-3">Our experts guide every step, from launch to scale.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="portfolio" class="px-7 pb-20 pt-4 text-center md:px-12 lg:px-14">
+          <div id="portfolio-symbol" class="kinetic-logo-mark mx-auto mb-12" aria-hidden="true"><span></span></div>
+          <h2 class="kinetic-lower-heading mx-auto max-w-[68rem]">
+            We create striking concepts and branding <span>that help your business</span>
+          </h2>
+        </section>
+
+        <section id="blog" class="sr-only">
+          <h2>Blog</h2>
+        </section>
+
+        <section id="contact" class="sr-only">
+          <h2>Contact</h2>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

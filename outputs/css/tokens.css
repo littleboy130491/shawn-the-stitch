@@ -10,6 +10,9 @@
   --color-primary-contrast: #ffffff;
   --color-accent: #2f6f73;
   --color-accent-contrast: #ffffff;
+  --color-background-dark: #080a09;
+  --color-surface-dark: #101211;
+  --color-primary-hot: #ff5b1d;
 
   /* Typography tokens */
   --font-display: Georgia, "Times New Roman", serif;
@@ -25,6 +28,12 @@
   --text-3xl: 2rem;
   --text-4xl: 2.75rem;
   --text-5xl: 4rem;
+  --text-nav: 0.72rem;
+  --text-button: 0.76rem;
+  --text-label: 0.68rem;
+  --text-card-heading: 1.2rem;
+  --text-section-heading: clamp(2.5rem, 6vw, 4rem);
+  --text-hero-heading: clamp(3.85rem, 8vw, 5.6rem);
 
   --leading-tight: 1.1;
   --leading-snug: 1.25;
@@ -44,6 +53,14 @@
 
   --shadow-sm: 0 0.25rem 1rem rgba(31, 27, 22, 0.08);
   --shadow-md: 0 0.75rem 2rem rgba(31, 27, 22, 0.12);
+
+  /* Layout scale tokens */
+  --space-section-y: clamp(4rem, 8vw, 7rem);
+  --space-section-x: clamp(1.75rem, 4vw, 3.5rem);
+  --space-content-max: 76rem;
+  --space-grid-gap: clamp(1rem, 2vw, 1.5rem);
+  --space-card-padding: 1.45rem;
+  --space-element-gap: 1.5rem;
 }
 
 body {

@@ -1,0 +1,378 @@
+:root {
+  --kinetic-bg: #f1f1ef;
+  --kinetic-panel: #ffffff;
+  --kinetic-ink: #111111;
+  --kinetic-muted: #8d8d8b;
+  --kinetic-soft: #d9d9d7;
+  --kinetic-soft-2: #cfcfcd;
+  --kinetic-accent: #ff4e13;
+  --kinetic-accent-deep: #c22a08;
+  --kinetic-border: rgba(17, 17, 17, 0.18);
+  --kinetic-font: Inter, Arial, Helvetica, sans-serif;
+}
+
+body.kinetic-wireframe {
+  background: var(--kinetic-bg);
+  color: var(--kinetic-ink);
+  font-family: var(--kinetic-font);
+  min-height: 100vh;
+}
+
+.kinetic-wireframe h1,
+.kinetic-wireframe h2,
+.kinetic-wireframe h3,
+.kinetic-wireframe .display-text {
+  color: var(--kinetic-ink);
+  font-family: var(--kinetic-font);
+  letter-spacing: 0;
+}
+
+.kinetic-stage {
+  background: var(--kinetic-bg);
+  overflow: hidden;
+}
+
+.kinetic-nav-link,
+.kinetic-small-copy,
+.kinetic-card-copy {
+  color: var(--kinetic-muted);
+}
+
+.kinetic-logo-mark {
+  height: 1.45rem;
+  position: relative;
+  width: 1.45rem;
+}
+
+.kinetic-logo-mark::before,
+.kinetic-logo-mark::after {
+  background: var(--kinetic-ink);
+  content: "";
+  position: absolute;
+}
+
+.kinetic-logo-mark::before {
+  border-radius: 0.14rem 0.14rem 0 0;
+  height: 0.72rem;
+  left: 0;
+  top: 0.55rem;
+  width: 0.76rem;
+}
+
+.kinetic-logo-mark::after {
+  border-radius: 999px;
+  height: 0.42rem;
+  right: 0.1rem;
+  top: 0.1rem;
+  width: 0.42rem;
+}
+
+.kinetic-logo-mark span {
+  background: var(--kinetic-ink);
+  border-radius: 0.12rem;
+  bottom: 0;
+  height: 0.7rem;
+  left: 0.76rem;
+  position: absolute;
+  width: 0.55rem;
+}
+
+.kinetic-outline-button {
+  align-items: center;
+  border: 1px solid var(--kinetic-ink);
+  border-radius: var(--radius-pill);
+  color: var(--kinetic-ink);
+  display: inline-flex;
+  font-size: 0.7rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0 2rem;
+}
+
+.kinetic-hero {
+  min-height: 43rem;
+  position: relative;
+}
+
+.kinetic-hero-figure {
+  background:
+    radial-gradient(ellipse at 49% 22%, rgba(20, 20, 20, 0.92) 0 2.1rem, transparent 2.25rem),
+    radial-gradient(ellipse at 50% 45%, rgba(10, 10, 10, 0.94) 0 7.2rem, transparent 7.4rem),
+    linear-gradient(82deg, transparent 0 16%, rgba(13, 13, 13, 0.62) 28% 68%, transparent 80%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.14));
+  filter: blur(0.45px) contrast(1.04);
+  inset: 4.8rem 11% 6rem 23%;
+  pointer-events: none;
+  position: absolute;
+}
+
+.kinetic-hero-figure::before,
+.kinetic-hero-figure::after {
+  content: "";
+  position: absolute;
+}
+
+.kinetic-hero-figure::before {
+  background:
+    linear-gradient(90deg, transparent, var(--kinetic-accent), #ff7a1f, transparent),
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
+  filter: blur(0.45rem);
+  height: 5.1rem;
+  left: -11%;
+  opacity: 0.94;
+  top: 44%;
+  transform: skewY(-3deg);
+  width: 58%;
+}
+
+.kinetic-hero-figure::after {
+  background:
+    radial-gradient(ellipse at 35% 45%, rgba(255, 92, 22, 0.9), transparent 44%),
+    linear-gradient(90deg, transparent, rgba(255, 97, 26, 0.62), transparent);
+  filter: blur(0.7rem);
+  height: 5rem;
+  right: 1%;
+  top: 32%;
+  width: 25%;
+}
+
+.kinetic-hero-placeholder {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  inset: 4.8rem 11% 6rem 23%;
+  min-height: auto;
+  opacity: 0;
+  position: absolute;
+}
+
+.kinetic-media-label {
+  background: rgba(241, 241, 239, 0.82);
+  border: 1px dashed var(--kinetic-border);
+  border-radius: var(--radius-pill);
+  color: rgba(17, 17, 17, 0.58);
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.28rem 0.62rem;
+  text-transform: uppercase;
+}
+
+.kinetic-media-label.is-dark {
+  background: rgba(0, 0, 0, 0.44);
+  border-color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.kinetic-action-pill {
+  align-items: center;
+  background: var(--kinetic-panel);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  color: var(--kinetic-ink);
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 800;
+  gap: 1.2rem;
+  padding: 0.36rem 1.2rem 0.36rem 0.38rem;
+}
+
+.kinetic-pill-glow {
+  background:
+    radial-gradient(circle at 28% 50%, #fff5d6 0 0.28rem, transparent 0.32rem),
+    linear-gradient(90deg, #dd1702, #ff7b21 48%, #6b0500);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0.2rem 0.6rem rgba(255, 74, 17, 0.3);
+  display: inline-block;
+  height: 1.92rem;
+  width: 4.7rem;
+}
+
+.kinetic-label-pill {
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: var(--radius-pill);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  font-size: 0.64rem;
+  font-weight: 700;
+  padding: 0.18rem 0.72rem;
+}
+
+.kinetic-service-card {
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent),
+    linear-gradient(120deg, #0c0c0c 0 30%, #efefee 45%, #070707 68%, #0f0f0f 100%);
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  border-radius: 1.45rem;
+  box-shadow: var(--shadow-md);
+  color: var(--kinetic-panel);
+  min-height: 9.8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.kinetic-service-card::before {
+  background:
+    radial-gradient(ellipse at 62% 47%, rgba(255, 79, 18, 0.86), transparent 24%),
+    linear-gradient(100deg, transparent, rgba(255, 73, 14, 0.76), transparent);
+  content: "";
+  filter: blur(0.45rem);
+  height: 4.3rem;
+  left: 0.8rem;
+  position: absolute;
+  top: 3.1rem;
+  width: 9rem;
+}
+
+.kinetic-service-card-content {
+  bottom: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.kinetic-giant-word {
+  bottom: -0.72rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(7rem, 19vw, 15.8rem);
+  font-weight: 900;
+  left: -0.6rem;
+  line-height: 0.75;
+  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.kinetic-section-symbol {
+  color: var(--kinetic-accent);
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.kinetic-gradient-chip {
+  background:
+    radial-gradient(circle at 18% 50%, #fff5dc 0 0.26rem, transparent 0.3rem),
+    linear-gradient(90deg, #dd1b04, #ff7821 54%, #5d0500);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0.2rem 0.65rem rgba(255, 76, 18, 0.28);
+  display: inline-block;
+  height: 1.6rem;
+  vertical-align: -0.15rem;
+  width: 5.15rem;
+}
+
+.kinetic-feature-card {
+  border-radius: 0.92rem;
+  min-height: 13.8rem;
+  overflow: hidden;
+  padding: 1.45rem;
+  position: relative;
+}
+
+.kinetic-feature-card.is-dark {
+  background: #050505;
+  color: var(--kinetic-panel);
+}
+
+.kinetic-feature-card.is-soft {
+  background: var(--kinetic-soft);
+}
+
+.kinetic-feature-card.is-blur {
+  background:
+    linear-gradient(160deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.72)),
+    linear-gradient(94deg, transparent 0 18%, #efefed 28%, #ff4c11 38%, #ff8b1e 47%, #0b0b0b 62%, transparent 75%);
+  color: var(--kinetic-panel);
+}
+
+.kinetic-feature-card.is-blur::before {
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 84, 16, 0.95), transparent),
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  content: "";
+  filter: blur(0.48rem);
+  height: 4rem;
+  left: -1rem;
+  position: absolute;
+  top: 4.3rem;
+  transform: skewY(-4deg);
+  width: 112%;
+}
+
+.kinetic-feature-card.is-photo {
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.82)),
+    linear-gradient(108deg, #f6f6f4 0 22%, #111 38%, #eeeeec 48%, #ff4e13 58%, #0e0e0e 76%);
+  color: var(--kinetic-panel);
+}
+
+.kinetic-feature-dot {
+  background: var(--kinetic-accent);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 0 0.22rem rgba(255, 78, 19, 0.12);
+  display: inline-block;
+  height: 0.55rem;
+  width: 0.55rem;
+}
+
+.kinetic-feature-text {
+  bottom: 1.15rem;
+  left: 1.45rem;
+  max-width: 13rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.kinetic-feature-card h3 {
+  color: inherit;
+  font-size: clamp(1rem, 2vw, 1.28rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.kinetic-feature-card p {
+  color: currentColor;
+  font-size: 0.68rem;
+  line-height: 1.3;
+  opacity: 0.58;
+}
+
+.kinetic-card-label {
+  border: 1px solid currentColor;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  font-size: 0.56rem;
+  font-weight: 800;
+  opacity: 0.68;
+  padding: 0.16rem 0.64rem;
+}
+
+.kinetic-lower-heading {
+  font-size: clamp(3rem, 8.5vw, 7.3rem);
+  font-weight: 600;
+  line-height: 0.98;
+}
+
+.kinetic-lower-heading span {
+  color: rgba(17, 17, 17, 0.18);
+}
+
+@media (max-width: 780px) {
+  .kinetic-hero {
+    min-height: 48rem;
+  }
+
+  .kinetic-hero-figure,
+  .kinetic-hero-placeholder {
+    inset: 11.6rem -10% 6.5rem 7%;
+  }
+
+  .kinetic-giant-word {
+    bottom: 0.6rem;
+    font-size: 6.5rem;
+  }
+}

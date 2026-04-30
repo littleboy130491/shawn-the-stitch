@@ -9,6 +9,10 @@ Use this file when the user asks to combine, stitch, merge, or assemble existing
 - If files are numbered, infer the arrangement from the numbers.
 - Example order: `01-hero.html`, `02-features.html`, `03-footer.html`.
 - If the arrangement is not explicit and cannot be inferred from filenames, ask the user for the order before writing the stitched file.
+- Identify the intended stitched page purpose before choosing a filename, order, or normalization direction.
+- If the user names the page purpose, use that.
+- If the purpose is not explicit, infer it from the output name, folder name, source filenames, page titles, hero copy, and section content.
+- If the purpose cannot be inferred and it affects source order or style direction, ask the user before writing files.
 
 ## Output Location
 
@@ -31,13 +35,19 @@ Use this file when the user asks to combine, stitch, merge, or assemble existing
 - Preserve source section IDs unless they conflict.
 - If duplicate IDs exist, rename the duplicates so every ID in the final file is unique.
 - Preserve existing stylesheet links and scripts that are needed by the stitched content.
+- If multiple source files have conflicting visual systems, read `NORMALIZATION.md` and normalize by stripping source presentation while preserving layout and alignment.
+- When adding normalization, keep `outputs/css/tokens.css` as the global style source and load the stitched-specific CSS after it.
+- For normalized stitched output, do not keep source-specific stylesheets or Tailwind presentation utilities unless they are required for layout or behavior.
 - Avoid adding unrelated design changes while stitching.
 - Keep the final HTML static and easy to edit manually.
 
 ## Completion Checklist
 
+- The stitched page purpose was identified from the request or safely inferred from the sources.
 - Source order is explicit or safely inferred.
 - The stitched file is new and inside `outputs/`.
 - No source file was overwritten.
 - Duplicate IDs were resolved.
 - Required CSS and script references are present.
+- A stitched-specific normalization stylesheet is present when source styles conflict.
+- Normalized output strips source presentation classes/styles while preserving layout and alignment.

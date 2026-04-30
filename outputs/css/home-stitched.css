@@ -1,0 +1,120 @@
+body.home-stitched-page {
+  --stitched-bg: var(--color-background-dark);
+  --stitched-panel: var(--color-surface-dark);
+  --stitched-text: var(--color-primary-contrast);
+  --stitched-accent: var(--color-primary-hot);
+  background: var(--stitched-bg);
+  color: var(--stitched-text);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+.home-stitched-shell {
+  background: var(--stitched-bg);
+  overflow: hidden;
+}
+
+.home-stitched-source {
+  width: 100%;
+}
+
+.folio-stitched-block .wireframe-stage,
+.kinetic-stitched-block .kinetic-stage {
+  font-family: var(--font-body);
+}
+
+.home-stitched-page .folio-wireframe h1,
+.home-stitched-page .folio-wireframe h2,
+.home-stitched-page .folio-wireframe h3,
+.home-stitched-page .kinetic-wireframe h1,
+.home-stitched-page .kinetic-wireframe h2,
+.home-stitched-page .kinetic-wireframe h3 {
+  font-family: var(--font-body);
+}
+
+.folio-stitched-block {
+  background: var(--stitched-bg);
+  color: var(--stitched-text);
+}
+
+.kinetic-stitched-block {
+  background: var(--stitched-bg);
+  padding-top: var(--space-element-gap);
+}
+
+.kinetic-stitched-block .kinetic-stage {
+  border-top-left-radius: 4.5rem;
+  border-top-right-radius: 4.5rem;
+}
+
+.home-stitched-page .wire-nav-link,
+.home-stitched-page .kinetic-nav-link {
+  font-size: var(--text-nav);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
+}
+
+.home-stitched-page .wire-pill-button,
+.home-stitched-page .kinetic-outline-button,
+.home-stitched-page .kinetic-action-pill {
+  border-radius: var(--radius-pill);
+  font-size: var(--text-button);
+  font-weight: var(--weight-bold);
+  min-height: 2.6rem;
+}
+
+.home-stitched-page .wire-pill-button,
+.home-stitched-page .kinetic-action-pill {
+  box-shadow: var(--shadow-sm);
+}
+
+.home-stitched-page .wire-microcopy,
+.home-stitched-page .kinetic-small-copy,
+.home-stitched-page .kinetic-feature-card p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.home-stitched-page .wire-service-label,
+.home-stitched-page .wire-service-number,
+.home-stitched-page .kinetic-card-label,
+.home-stitched-page .kinetic-media-label,
+.home-stitched-page .kinetic-label-pill {
+  font-size: var(--text-label);
+  letter-spacing: 0;
+}
+
+.home-stitched-page .wire-gallery-card,
+.home-stitched-page .kinetic-feature-card,
+.home-stitched-page .kinetic-service-card {
+  border-radius: var(--radius-lg);
+}
+
+.home-stitched-page .kinetic-feature-card {
+  padding: var(--space-card-padding);
+}
+
+.home-stitched-page .kinetic-feature-card h3 {
+  font-size: var(--text-card-heading);
+  line-height: var(--leading-tight);
+}
+
+.home-stitched-page #hero h1,
+.home-stitched-page #kinetic-hero h1 {
+  font-size: var(--text-hero-heading);
+  letter-spacing: 0;
+}
+
+.home-stitched-page #about h2,
+.home-stitched-page #kinetic-about h2,
+.home-stitched-page .kinetic-lower-heading {
+  font-size: var(--text-section-heading);
+  letter-spacing: 0;
+}
+
+@media (max-width: 780px) {
+  .kinetic-stitched-block .kinetic-stage {
+    border-top-left-radius: 2.25rem;
+    border-top-right-radius: 2.25rem;
+  }
+}
